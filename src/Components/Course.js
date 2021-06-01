@@ -177,7 +177,7 @@ export const Course = () => {
     window.addEventListener('scroll', navHighlighter);
   });
   const sections = document.querySelectorAll('.tabs-content > div');
-  console.log(sections);
+  //console.log(sections);
   function navHighlighter() {
     // Get current scroll position
     let scrollY = window.pageYOffset;
@@ -187,7 +187,7 @@ export const Course = () => {
       const sectionHeight = current.offsetHeight;
       const sectionTop = current.offsetTop - 86;
       const sectionId = current.getAttribute('id');
-      console.log(sectionId);
+      //console.log(sectionId);
       //console.log(document.querySelector('#sticku #' + sectionId).classList);
       /*
       - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
@@ -262,14 +262,14 @@ export const Course = () => {
                 <li>
                   <h6>
                     <i class='far fa-tags'></i>Standard Pricing
-                    <i class='fas fa-question-circle' tabindex='0'></i>
+                    <i class='fas fa-question-circle' tabIndex='0'></i>
                   </h6>
                   <p class='price'>$2,500</p>
                 </li>
                 <li>
                   <h6>
                     <i class='far fa-tags'></i>New Grad Pricing
-                    <i class='fas fa-question-circle' tabindex='0'></i>
+                    <i class='fas fa-question-circle' tabIndex='0'></i>
                   </h6>
                   <p class='price'>
                     $999<span>$2,500</span>
@@ -374,14 +374,14 @@ export const Course = () => {
                   <li>
                     <h6>
                       <i class='far fa-tags'></i>Standard Pricing
-                      <i class='fas fa-question-circle' tabindex='0'></i>
+                      <i class='fas fa-question-circle' tabIndex='0'></i>
                     </h6>
                     <p class='price'>$2,500</p>
                   </li>
                   <li>
                     <h6>
                       <i class='far fa-tags'></i>New Grad Pricing
-                      <i class='fas fa-question-circle' tabindex='0'></i>
+                      <i class='fas fa-question-circle' tabIndex='0'></i>
                     </h6>
                     <p class='price'>
                       $999<span>$2,500</span>
