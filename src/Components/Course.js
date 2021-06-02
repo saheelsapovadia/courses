@@ -3,6 +3,7 @@ import './course.css';
 import { FiVideo } from 'react-icons/fi';
 import { RiKeynoteLine } from 'react-icons/ri';
 import { GrGlobe } from 'react-icons/gr';
+import { FaGraduationCap } from 'react-icons/fa';
 export const Course = () => {
   useEffect(() => {
     window.onscroll = () => toggleNav();
@@ -287,7 +288,13 @@ export const Course = () => {
                 <div className='course-tags'>
                   <span class='category-1'>Business / Economics</span>
                   <span class='scholarships-tag'>
-                    <i class='fas fa-graduation-cap'></i>Scholarships available
+                    <i class='fas fa-graduation-cap'></i>
+                    <FaGraduationCap
+                      className='grad'
+                      size='20px'
+                      // style={{ paddingTop: '5px' }}
+                    />
+                    Scholarships available
                   </span>
                 </div>
               </div>
@@ -882,7 +889,7 @@ export const Course = () => {
         <div className='similar-courses-wrapper'>
           <h4 class='text-center'>You might also like:</h4>
           <p class='text-center'>Choose the course that is right for you</p>
-          <row>
+          <div className='row'>
             <div class='col-lg-4 col-md-6'>
               <div class='course-wrap compact disabled'>
                 <div class='course-img'>
@@ -902,7 +909,83 @@ export const Course = () => {
                 </div>
               </div>
             </div>
-          </row>
+            <div class='col-lg-4 col-md-6'>
+              <div class='course-wrap compact disabled'>
+                <div class='course-img'>
+                  <img src='https://images.unsplash.com/photo-1491951931722-5a446214b4e2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1303&amp;q=80' />
+                </div>
+                <div class='course-info'>
+                  <h4>Effective Social Media Marketing</h4>
+                  <div class='intructor-info'>
+                    <div class='user-img-wrap'>
+                      <div class='img-wrap'>
+                        <img src='https://s3-us-west-2.amazonaws.com/campuswire-default-images/user-blue.png' />
+                      </div>
+                    </div>
+                    <p>TBA</p>
+                  </div>
+                  <div class='course-price'>Coming soon</div>
+                </div>
+              </div>
+            </div>
+            <div class='col-lg-4 col-md-6'>
+              <div class='course-wrap compact disabled'>
+                <div class='course-img'>
+                  <img src='https://images.unsplash.com/photo-1505909182942-e2f09aee3e89?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2104&amp;q=80' />
+                </div>
+                <div class='course-info'>
+                  <h4>Product Design Masterclass</h4>
+                  <div class='intructor-info'>
+                    <div class='user-img-wrap'>
+                      <div class='img-wrap'>
+                        <img src='https://s3-us-west-2.amazonaws.com/campuswire-default-images/user-blue.png' />
+                      </div>
+                    </div>
+                    <p>TBA</p>
+                  </div>
+                  <div class='course-price'>Coming soon</div>
+                </div>
+              </div>
+            </div>
+            <div class='col-lg-4 col-md-6'>
+              <div class='course-wrap compact disabled'>
+                <div class='course-img'>
+                  <img src='https://images.unsplash.com/photo-1524351543168-8e38787614e9?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1867&amp;q=80' />
+                </div>
+                <div class='course-info'>
+                  <h4>Quantitative Marketing Bootcamp</h4>
+                  <div class='intructor-info'>
+                    <div class='user-img-wrap'>
+                      <div class='img-wrap'>
+                        <img src='https://s3-us-west-2.amazonaws.com/campuswire-default-images/user-blue.png' />
+                      </div>
+                    </div>
+                    <p>TBA</p>
+                  </div>
+                  <div class='course-price'>Coming soon</div>
+                </div>
+              </div>
+            </div>
+            <div class='col-lg-4 col-md-6'>
+              <div class='course-wrap compact disabled'>
+                <div class='course-img'>
+                  <img src='https://images.unsplash.com/photo-1528819622765-d6bcf132f793?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80' />
+                </div>
+                <div class='course-info'>
+                  <h4>The Economics of Universal Basic Income</h4>
+                  <div class='intructor-info'>
+                    <div class='user-img-wrap'>
+                      <div class='img-wrap'>
+                        <img src='https://s3-us-west-2.amazonaws.com/campuswire-default-images/user-blue.png' />
+                      </div>
+                    </div>
+                    <p>TBA</p>
+                  </div>
+                  <div class='course-price'>Coming soon</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
